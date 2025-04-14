@@ -20,7 +20,7 @@ pipeline {
             steps {
                 echo 'Hello World'
                 echo "tHE result IS ${currentBuild.currentResult}"
-                pyyhon cc.py
+                python cc.py
             }
         }
    
