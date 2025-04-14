@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                python build.py
+                echo 'building'
                 echo env.BUILD_NUMBER
             }
         }
