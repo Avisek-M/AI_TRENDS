@@ -19,7 +19,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Hello World'
-                echo "tHE result IS ${currentBuild.currentResult}"
+                echo "The result IS ${currentBuild.currentResult}"
             }
         }
    
