@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'building'
+                python build.py
                 echo env.BUILD_NUMBER
             }
         }
@@ -20,7 +20,6 @@ pipeline {
             steps {
                 echo 'Hello World'
                 echo "tHE result IS ${currentBuild.currentResult}"
-                python cc.py
             }
         }
    
